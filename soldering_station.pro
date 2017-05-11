@@ -1,4 +1,4 @@
-update=Чт 27 апр 2017 13:59:28
+update=Чт. 11 мая 2017 16:43:53
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,9 +23,11 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,5 +58,7 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=lib/sfh617a
+LibName31=lib/bt139
+LibName32=lib/switch
+LibName33=lib/sw_push
