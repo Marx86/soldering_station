@@ -1,4 +1,4 @@
-update=Чт. 11 мая 2017 16:43:53
+update=Вт. 16 мая 2017 16:20:31
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=lib
@@ -62,3 +60,7 @@ LibName30=lib/sfh617a
 LibName31=lib/bt139
 LibName32=lib/switch
 LibName33=lib/sw_push
+LibName34=lib/алс324б1
+LibName35=lib/иб
+[general]
+version=1
