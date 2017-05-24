@@ -1329,19 +1329,13 @@ Wire Wire Line
 Wire Wire Line
 	1500 1700 1050 1700
 Wire Wire Line
-	1050 1700 1050 1750
+	1050 1600 1050 1750
 Wire Wire Line
 	1450 1300 1500 1300
 Wire Wire Line
 	1150 1300 1050 1300
 Wire Wire Line
-	1050 950  1050 1600
-Wire Wire Line
-	1050 1600 1500 1600
-Connection ~ 1050 1300
-Wire Wire Line
-	1500 1500 1050 1500
-Connection ~ 1050 1500
+	1050 1500 1500 1500
 Wire Wire Line
 	6300 2100 6300 4350
 Wire Wire Line
@@ -1683,4 +1677,23 @@ Wire Wire Line
 	9500 1400 9350 1400
 Wire Wire Line
 	9350 1400 9350 1550
+$Comp
+L C_Small C9
+U 1 1 59257B5A
+P 1300 1600
+F 0 "C9" V 1250 1350 50  0000 C CNN
+F 1 "0.1" V 1250 1500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 1300 1600 50  0001 C CNN
+F 3 "" H 1300 1600 50  0000 C CNN
+	1    1300 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 1600 1500 1600
+Wire Wire Line
+	1200 1600 1050 1600
+Connection ~ 1050 1700
+Wire Wire Line
+	1050 950  1050 1500
+Connection ~ 1050 1300
 $EndSCHEMATC
