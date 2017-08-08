@@ -413,17 +413,6 @@ F 3 "" H 3450 3600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Rotary_Encoder SW2
-U 1 1 59133B57
-P 5600 2500
-F 0 "SW2" H 5350 2750 50  0000 L CNN
-F 1 "Enc" H 5600 2750 50  0000 L CNN
-F 2 "Potentiometers:Potentiometer_Alps_RK09K_Horizontal" H 5500 2660 50  0001 C CNN
-F 3 "" H 5600 2760 50  0001 C CNN
-	1    5600 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L MOC3023M U2
 U 1 1 59143D58
 P 7950 2700
@@ -569,12 +558,12 @@ $EndComp
 $Comp
 L GND #PWR014
 U 1 1 5914B766
-P 4950 3200
-F 0 "#PWR014" H 4950 2950 50  0001 C CNN
-F 1 "GND" H 5050 3100 50  0001 C CNN
-F 2 "" H 4950 3200 50  0000 C CNN
-F 3 "" H 4950 3200 50  0000 C CNN
-	1    4950 3200
+P 4850 3200
+F 0 "#PWR014" H 4850 2950 50  0001 C CNN
+F 1 "GND" H 4950 3100 50  0001 C CNN
+F 2 "" H 4850 3200 50  0000 C CNN
+F 3 "" H 4850 3200 50  0000 C CNN
+	1    4850 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -668,24 +657,13 @@ $EndComp
 $Comp
 L SW_PUSH SW1
 U 1 1 591548A3
-P 4950 2850
-F 0 "SW1" V 4750 3000 50  0000 C CNN
-F 1 "mode" V 4800 3000 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_PUSH-12mm" H 4950 2850 60  0001 C CNN
-F 3 "" H 4950 2850 60  0000 C CNN
-	1    4950 2850
+P 4850 2850
+F 0 "SW1" V 4650 3000 50  0000 C CNN
+F 1 "mode" V 4700 3000 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH-12mm" H 4850 2850 60  0001 C CNN
+F 3 "" H 4850 2850 60  0000 C CNN
+	1    4850 2850
 	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR018
-U 1 1 591549FF
-P 5250 3200
-F 0 "#PWR018" H 5250 2950 50  0001 C CNN
-F 1 "GND" H 5350 3100 50  0001 C CNN
-F 2 "" H 5250 3200 50  0000 C CNN
-F 3 "" H 5250 3200 50  0000 C CNN
-	1    5250 3200
-	1    0    0    -1  
 $EndComp
 $Comp
 L R R1
@@ -1149,6 +1127,94 @@ F 3 "" H 6400 1100 50  0000 C CNN
 	1    6400 1100
 	0    1    1    0   
 $EndComp
+$Comp
+L D_Bridge_+-AA D5
+U 1 1 591D2084
+P 7450 5550
+F 0 "D5" H 7100 5750 50  0000 L CNN
+F 1 "df08s" H 7050 5650 50  0000 L CNN
+F 2 "Oscillators:Oscillator_SMD_SeikoEpson_SG8002JA-4pin_14.0x8.7mm" H 7450 5550 50  0001 C CNN
+F 3 "" H 7450 5550 50  0000 C CNN
+	1    7450 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 591D2FEC
+P 6750 5550
+F 0 "P1" H 6750 5300 50  0000 C CNN
+F 1 "17v" H 6750 5400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6750 5550 50  0001 C CNN
+F 3 "" H 6750 5550 50  0000 C CNN
+	1    6750 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P6
+U 1 1 5922F5D6
+P 9700 1050
+F 0 "P6" H 9650 1300 50  0000 L CNN
+F 1 "Fan" H 9650 1200 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9700 1050 50  0001 C CNN
+F 3 "" H 9700 1050 50  0000 C CNN
+	1    9700 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P8
+U 1 1 5922F6D0
+P 9700 1800
+F 0 "P8" H 9550 2000 50  0000 C CNN
+F 1 "Heater" H 9750 2000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch3.96mm_Friction_Lock" H 9700 1800 50  0001 C CNN
+F 3 "" H 9700 1800 50  0000 C CNN
+	1    9700 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P7
+U 1 1 5922F790
+P 9700 1400
+F 0 "P7" H 9200 1600 50  0000 L CNN
+F 1 "thermocouple" H 9350 1600 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 9700 1400 50  0001 C CNN
+F 3 "" H 9700 1400 50  0000 C CNN
+	1    9700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C9
+U 1 1 59257B5A
+P 1300 1600
+F 0 "C9" V 1250 1350 50  0000 C CNN
+F 1 "0.1" V 1250 1500 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 1300 1600 50  0001 C CNN
+F 3 "" H 1300 1600 50  0000 C CNN
+	1    1300 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Rotary_Encoder_Switch SW2
+U 1 1 59883EF1
+P 5350 2800
+F 0 "SW2" V 5300 3150 50  0000 L CNN
+F 1 "Enc" V 5450 3150 50  0000 L CNN
+F 2 "lib:Encoder_with_button" H 5250 2960 50  0001 C CNN
+F 3 "" H 5350 3060 50  0001 C CNN
+	1    5350 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 591549FF
+P 5450 3200
+F 0 "#PWR018" H 5450 2950 50  0001 C CNN
+F 1 "GND" H 5550 3100 50  0001 C CNN
+F 2 "" H 5450 3200 50  0000 C CNN
+F 3 "" H 5450 3200 50  0000 C CNN
+	1    5450 3200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3400 2200 8900 2200
 Connection ~ 6650 1400
@@ -1240,7 +1306,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 4000 3450 4050
 Wire Wire Line
-	3400 2300 5150 2300
+	3400 2300 5450 2300
 Wire Wire Line
 	8250 3050 8300 3050
 Wire Wire Line
@@ -1280,15 +1346,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 3250 7200 3250
 Wire Wire Line
-	3400 2400 5050 2400
-Wire Wire Line
-	5050 2400 5050 2600
-Wire Wire Line
-	5050 2600 5300 2600
-Wire Wire Line
-	5300 2500 5250 2500
-Wire Wire Line
-	5250 2500 5250 3200
+	3400 2400 5250 2400
 Connection ~ 9050 2800
 Wire Wire Line
 	9350 2700 9500 2700
@@ -1321,8 +1379,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 3250 6850 3250
 Wire Wire Line
-	4950 2500 3400 2500
-Wire Wire Line
 	2400 950  2400 1000
 Wire Wire Line
 	2400 3900 2400 4050
@@ -1354,10 +1410,6 @@ Wire Wire Line
 	6400 3250 6400 1800
 Wire Wire Line
 	6400 1800 3400 1800
-Wire Wire Line
-	5150 2300 5150 2400
-Wire Wire Line
-	5150 2400 5300 2400
 Wire Wire Line
 	9050 1750 9500 1750
 Wire Wire Line
@@ -1551,9 +1603,9 @@ Wire Wire Line
 Wire Wire Line
 	5900 4000 5850 4000
 Wire Wire Line
-	4950 3200 4950 3150
+	4850 3200 4850 3150
 Wire Wire Line
-	4950 2550 4950 2500
+	4850 2550 4850 2500
 Wire Wire Line
 	3500 4000 3450 4000
 Wire Wire Line
@@ -1584,32 +1636,10 @@ Connection ~ 8150 4250
 Wire Wire Line
 	8550 4200 8550 4250
 Connection ~ 8550 4250
-$Comp
-L D_Bridge_+-AA D5
-U 1 1 591D2084
-P 7450 5550
-F 0 "D5" H 7100 5750 50  0000 L CNN
-F 1 "df08s" H 7050 5650 50  0000 L CNN
-F 2 "Oscillators:Oscillator_SMD_SeikoEpson_SG8002JA-4pin_14.0x8.7mm" H 7450 5550 50  0001 C CNN
-F 3 "" H 7450 5550 50  0000 C CNN
-	1    7450 5550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7100 5950 7100 5550
 Wire Wire Line
 	7100 5550 7150 5550
-$Comp
-L CONN_01X02 P1
-U 1 1 591D2FEC
-P 6750 5550
-F 0 "P1" H 6750 5300 50  0000 C CNN
-F 1 "17v" H 6750 5400 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6750 5550 50  0001 C CNN
-F 3 "" H 6750 5550 50  0000 C CNN
-	1    6750 5550
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7450 5250 7450 5200
 Wire Wire Line
@@ -1640,54 +1670,10 @@ Wire Wire Line
 	3450 3800 3500 3800
 Wire Wire Line
 	3450 3400 3450 3450
-$Comp
-L CONN_01X02 P6
-U 1 1 5922F5D6
-P 9700 1050
-F 0 "P6" H 9650 1300 50  0000 L CNN
-F 1 "Fan" H 9650 1200 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9700 1050 50  0001 C CNN
-F 3 "" H 9700 1050 50  0000 C CNN
-	1    9700 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X02 P8
-U 1 1 5922F6D0
-P 9700 1800
-F 0 "P8" H 9550 2000 50  0000 C CNN
-F 1 "Heater" H 9750 2000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch3.96mm_Friction_Lock" H 9700 1800 50  0001 C CNN
-F 3 "" H 9700 1800 50  0000 C CNN
-	1    9700 1800
-	1    0    0    1   
-$EndComp
-$Comp
-L CONN_01X03 P7
-U 1 1 5922F790
-P 9700 1400
-F 0 "P7" H 9200 1600 50  0000 L CNN
-F 1 "thermocouple" H 9350 1600 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 9700 1400 50  0001 C CNN
-F 3 "" H 9700 1400 50  0000 C CNN
-	1    9700 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 1400 9350 1400
 Wire Wire Line
 	9350 1400 9350 1550
-$Comp
-L C_Small C9
-U 1 1 59257B5A
-P 1300 1600
-F 0 "C9" V 1250 1350 50  0000 C CNN
-F 1 "0.1" V 1250 1500 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805" H 1300 1600 50  0001 C CNN
-F 3 "" H 1300 1600 50  0000 C CNN
-	1    1300 1600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1400 1600 1500 1600
 Wire Wire Line
@@ -1696,4 +1682,23 @@ Connection ~ 1050 1700
 Wire Wire Line
 	1050 950  1050 1500
 Connection ~ 1050 1300
+Wire Wire Line
+	4850 2500 3400 2500
+Wire Wire Line
+	5250 2400 5250 2500
+Wire Wire Line
+	5450 2300 5450 2500
+Wire Wire Line
+	5350 2500 5350 2400
+Wire Wire Line
+	5350 2400 5650 2400
+Wire Wire Line
+	5650 3150 5650 2400
+Wire Wire Line
+	5250 3150 5650 3150
+Wire Wire Line
+	5250 3150 5250 3100
+Wire Wire Line
+	5450 3100 5450 3200
+Connection ~ 5450 3150
 $EndSCHEMATC

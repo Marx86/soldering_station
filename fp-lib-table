@@ -93,4 +93,5 @@
   (lib (name Varistors)(type KiCad)(uri /home/max/.kicad/modules/Varistors.pretty)(options "")(descr ""))
   (lib (name Wire_Connections_Bridges)(type KiCad)(uri /home/max/.kicad/modules/Wire_Connections_Bridges.pretty)(options "")(descr ""))
   (lib (name Wire_Pads)(type KiCad)(uri /home/max/.kicad/modules/Wire_Pads.pretty)(options "")(descr ""))
+  (lib (name lib)(type KiCad)(uri "$(KIPRJMOD)/lib")(options "")(descr ""))
 )
