@@ -1,39 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:sfh617a
-LIBS:bt139
-LIBS:switch
-LIBS:sw_push
-LIBS:алс324б1
-LIBS:иб
+EESchema Schematic File Version 4
 LIBS:soldering_station-cache
 EELAYER 26 0
 EELAYER END
@@ -50,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TL072 U1
+L soldering_station-rescue:TL072 U1
 U 1 1 5901D04C
 P 7450 1400
 F 0 "U1" H 7550 1700 50  0000 L CNN
@@ -61,7 +26,7 @@ F 3 "" H 7450 1400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L TL072 U1
+L soldering_station-rescue:TL072 U1
 U 2 1 5901D0A9
 P 7450 4350
 F 0 "U1" H 7550 4650 50  0000 L CNN
@@ -72,7 +37,7 @@ F 3 "" H 7450 4350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 5901D4D7
 P 8150 1900
 F 0 "#PWR01" H 8150 1650 50  0001 C CNN
@@ -83,7 +48,7 @@ F 3 "" H 8150 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R23
+L soldering_station-rescue:R R23
 U 1 1 5901D588
 P 8350 1300
 F 0 "R23" V 8250 1150 50  0000 C CNN
@@ -94,7 +59,7 @@ F 3 "" H 8350 1300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C4
+L soldering_station-rescue:C_Small C4
 U 1 1 5901D6AF
 P 8150 1700
 F 0 "C4" H 8242 1746 50  0000 L CNN
@@ -105,7 +70,7 @@ F 3 "" H 8150 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R27
+L soldering_station-rescue:R R27
 U 1 1 5901DA57
 P 8550 1100
 F 0 "R27" H 8600 1200 50  0000 L CNN
@@ -116,7 +81,7 @@ F 3 "" H 8550 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R19
+L soldering_station-rescue:R R19
 U 1 1 5901DBE7
 P 7850 1100
 F 0 "R19" H 7900 1200 50  0000 L CNN
@@ -127,7 +92,7 @@ F 3 "" H 7850 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R20
+L soldering_station-rescue:R R20
 U 1 1 5901DC5E
 P 7850 1700
 F 0 "R20" H 7920 1746 50  0000 L CNN
@@ -138,7 +103,7 @@ F 3 "" H 7850 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L POT RV1
+L soldering_station-rescue:POT RV1
 U 1 1 5901DD3E
 P 7250 900
 F 0 "RV1" V 7450 1050 50  0000 C CNN
@@ -149,7 +114,7 @@ F 3 "" H 7250 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 5901DE5F
 P 7850 1900
 F 0 "#PWR02" H 7850 1650 50  0001 C CNN
@@ -160,7 +125,7 @@ F 3 "" H 7850 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R15
+L soldering_station-rescue:R R15
 U 1 1 5901E045
 P 6850 1400
 F 0 "R15" V 6750 1300 50  0000 C CNN
@@ -171,7 +136,7 @@ F 3 "" H 6850 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C1
+L soldering_station-rescue:C_Small C1
 U 1 1 5901E4EF
 P 6650 1700
 F 0 "C1" H 6742 1746 50  0000 L CNN
@@ -182,7 +147,7 @@ F 3 "" H 6650 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 5901E56A
 P 6650 1900
 F 0 "#PWR03" H 6650 1650 50  0001 C CNN
@@ -193,7 +158,7 @@ F 3 "" H 6650 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 5901F26F
 P 7550 1900
 F 0 "#PWR04" H 7550 1650 50  0001 C CNN
@@ -204,7 +169,7 @@ F 3 "" H 7550 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 59020DDC
 P 8150 4850
 F 0 "#PWR05" H 8150 4600 50  0001 C CNN
@@ -215,7 +180,7 @@ F 3 "" H 8150 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R24
+L soldering_station-rescue:R R24
 U 1 1 59020DE2
 P 8350 4250
 F 0 "R24" V 8250 4150 50  0000 C CNN
@@ -226,7 +191,7 @@ F 3 "" H 8350 4250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C5
+L soldering_station-rescue:C_Small C5
 U 1 1 59020DE8
 P 8150 4650
 F 0 "C5" H 8242 4696 50  0000 L CNN
@@ -237,7 +202,7 @@ F 3 "" H 8150 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR06
+L power:+5V #PWR06
 U 1 1 59020DEE
 P 8550 3750
 F 0 "#PWR06" H 8550 3600 50  0001 C CNN
@@ -248,7 +213,7 @@ F 3 "" H 8550 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R28
+L soldering_station-rescue:R R28
 U 1 1 59020DF4
 P 8550 4050
 F 0 "R28" H 8600 4150 50  0000 L CNN
@@ -259,7 +224,7 @@ F 3 "" H 8550 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R21
+L soldering_station-rescue:R R21
 U 1 1 59020DFA
 P 7850 4050
 F 0 "R21" H 7900 4150 50  0000 L CNN
@@ -270,7 +235,7 @@ F 3 "" H 7850 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R22
+L soldering_station-rescue:R R22
 U 1 1 59020E00
 P 7850 4650
 F 0 "R22" H 7920 4696 50  0000 L CNN
@@ -281,7 +246,7 @@ F 3 "" H 7850 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L POT RV2
+L soldering_station-rescue:POT RV2
 U 1 1 59020E06
 P 7250 3850
 F 0 "RV2" V 7450 4000 50  0000 C CNN
@@ -292,7 +257,7 @@ F 3 "" H 7250 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 59020E0C
 P 7850 4850
 F 0 "#PWR07" H 7850 4600 50  0001 C CNN
@@ -303,7 +268,7 @@ F 3 "" H 7850 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R16
+L soldering_station-rescue:R R16
 U 1 1 59020E12
 P 6850 4350
 F 0 "R16" V 6750 4250 50  0000 C CNN
@@ -314,7 +279,7 @@ F 3 "" H 6850 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C2
+L soldering_station-rescue:C_Small C2
 U 1 1 59020E18
 P 6650 4650
 F 0 "C2" H 6742 4696 50  0000 L CNN
@@ -325,7 +290,7 @@ F 3 "" H 6650 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 59020E1E
 P 6650 4850
 F 0 "#PWR08" H 6650 4600 50  0001 C CNN
@@ -336,7 +301,7 @@ F 3 "" H 6650 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR09
+L power:+5V #PWR09
 U 1 1 59020E24
 P 7550 3750
 F 0 "#PWR09" H 7550 3600 50  0001 C CNN
@@ -347,7 +312,7 @@ F 3 "" H 7550 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 59020E2A
 P 7550 4850
 F 0 "#PWR010" H 7550 4600 50  0001 C CNN
@@ -358,7 +323,7 @@ F 3 "" H 7550 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ATMEGA8A-P IC1
+L atmel:ATMEGA8A-P IC1
 U 1 1 5912C25D
 P 2400 2400
 F 0 "IC1" H 2850 3800 50  0000 C CNN
@@ -369,7 +334,7 @@ F 3 "" H 2400 2400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 5912E7A7
 P 9350 1550
 F 0 "#PWR011" H 9350 1300 50  0001 C CNN
@@ -380,7 +345,7 @@ F 3 "" H 9350 1550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Buzzer BZ1
+L soldering_station-rescue:Buzzer BZ1
 U 1 1 5913130E
 P 3600 3900
 F 0 "BZ1" H 3650 3750 50  0000 L CNN
@@ -391,7 +356,7 @@ F 3 "" V 3575 4000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 59131E18
 P 3450 4050
 F 0 "#PWR012" H 3450 3800 50  0001 C CNN
@@ -402,7 +367,7 @@ F 3 "" H 3450 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R9
+L soldering_station-rescue:R R9
 U 1 1 59131FE4
 P 3450 3600
 F 0 "R9" H 3350 3500 50  0000 C CNN
@@ -413,7 +378,7 @@ F 3 "" H 3450 3600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MOC3023M U2
+L soldering_station-rescue:MOC3023M U2
 U 1 1 59143D58
 P 7950 2700
 F 0 "U2" H 7700 2900 50  0000 C CNN
@@ -424,7 +389,7 @@ F 3 "" H 7925 2700 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MOC3023M U3
+L soldering_station-rescue:MOC3023M U3
 U 1 1 59143E30
 P 7950 3150
 F 0 "U3" H 7700 2950 50  0000 C CNN
@@ -435,7 +400,7 @@ F 3 "" H 7925 3150 50  0000 L CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L R R17
+L soldering_station-rescue:R R17
 U 1 1 5914444B
 P 7050 2600
 F 0 "R17" V 6950 2450 50  0000 C CNN
@@ -446,7 +411,7 @@ F 3 "" H 7050 2600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R18
+L soldering_station-rescue:R R18
 U 1 1 59144525
 P 7050 3250
 F 0 "R18" V 6950 3100 50  0000 C CNN
@@ -457,7 +422,7 @@ F 3 "" H 7050 3250 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R25
+L soldering_station-rescue:R R25
 U 1 1 5914511C
 P 8450 2800
 F 0 "R25" V 8250 2800 50  0000 C CNN
@@ -468,7 +433,7 @@ F 3 "" H 8450 2800 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R26
+L soldering_station-rescue:R R26
 U 1 1 5914528A
 P 8450 3050
 F 0 "R26" V 8550 2950 50  0000 C CNN
@@ -479,7 +444,7 @@ F 3 "" H 8450 3050 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L D D3
+L soldering_station-rescue:D D3
 U 1 1 591456C9
 P 8800 2800
 F 0 "D3" H 8800 2600 50  0000 C CNN
@@ -490,7 +455,7 @@ F 3 "" H 8800 2800 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L BT139 VD1
+L bt139:BT139 VD1
 U 1 1 59145DE9
 P 9050 2600
 F 0 "VD1" H 9100 2350 50  0000 L CNN
@@ -501,7 +466,7 @@ F 3 "" V 9050 2600 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L BT139 VD2
+L bt139:BT139 VD2
 U 1 1 59145E5D
 P 9050 3250
 F 0 "VD2" H 9179 3296 50  0000 L CNN
@@ -512,7 +477,7 @@ F 3 "" V 9050 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D D4
+L soldering_station-rescue:D D4
 U 1 1 5914649B
 P 8800 3050
 F 0 "D4" H 8800 3150 50  0000 C CNN
@@ -523,7 +488,7 @@ F 3 "" H 8800 3050 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 59146C75
 P 7600 3350
 F 0 "#PWR013" H 7600 3100 50  0001 C CNN
@@ -534,7 +499,7 @@ F 3 "" H 7600 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1
+L soldering_station-rescue:LED D1
 U 1 1 59146F29
 P 7400 2600
 F 0 "D1" H 7450 2450 50  0000 C CNN
@@ -545,7 +510,7 @@ F 3 "" H 7400 2600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D2
+L soldering_station-rescue:LED D2
 U 1 1 59147091
 P 7400 3250
 F 0 "D2" H 7450 3100 50  0000 C CNN
@@ -556,7 +521,7 @@ F 3 "" H 7400 3250 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 5914B766
 P 4850 3200
 F 0 "#PWR014" H 4850 2950 50  0001 C CNN
@@ -567,7 +532,7 @@ F 3 "" H 4850 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P2
+L soldering_station-rescue:CONN_01X02 P2
 U 1 1 5914C58F
 P 9700 2750
 F 0 "P2" H 9500 2900 50  0000 L CNN
@@ -578,7 +543,7 @@ F 3 "" H 9700 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P3
+L soldering_station-rescue:CONN_01X02 P3
 U 1 1 5914D402
 P 9700 3100
 F 0 "P3" H 9350 2950 50  0000 L CNN
@@ -589,7 +554,7 @@ F 3 "" H 9700 3100 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Switch SB1
+L switch:Switch SB1
 U 1 1 5914E255
 P 6650 3250
 F 0 "SB1" H 6650 3507 60  0000 C CNN
@@ -600,7 +565,7 @@ F 3 "" H 6650 3250 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L power:GND #PWR015
 U 1 1 5914FBD3
 P 9350 4850
 F 0 "#PWR015" H 9350 4600 50  0001 C CNN
@@ -611,7 +576,7 @@ F 3 "" H 9350 4850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P4
+L soldering_station-rescue:CONN_01X02 P4
 U 1 1 5914FDDB
 P 9700 3900
 F 0 "P4" H 9650 4150 50  0000 L CNN
@@ -622,7 +587,7 @@ F 3 "" H 9700 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P5
+L soldering_station-rescue:CONN_01X02 P5
 U 1 1 5914FEAB
 P 9700 4300
 F 0 "P5" H 9650 4500 50  0000 L CNN
@@ -633,7 +598,7 @@ F 3 "" H 9700 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR016
+L power:+5V #PWR016
 U 1 1 5901E689
 P 7550 800
 F 0 "#PWR016" H 7550 650 50  0001 C CNN
@@ -644,7 +609,7 @@ F 3 "" H 7550 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR017
+L power:+5V #PWR017
 U 1 1 5901DA1F
 P 8550 800
 F 0 "#PWR017" H 8550 650 50  0001 C CNN
@@ -655,7 +620,7 @@ F 3 "" H 8550 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW1
+L device:SW_PUSH SW1
 U 1 1 591548A3
 P 4850 2850
 F 0 "SW1" V 4650 3000 50  0000 C CNN
@@ -666,7 +631,7 @@ F 3 "" H 4850 2850 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R1
+L soldering_station-rescue:R R1
 U 1 1 5915883E
 P 1300 1300
 F 0 "R1" V 1093 1300 50  0000 C CNN
@@ -677,7 +642,7 @@ F 3 "" H 1300 1300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +5V #PWR019
+L power:+5V #PWR019
 U 1 1 59158E30
 P 2400 950
 F 0 "#PWR019" H 2400 800 50  0001 C CNN
@@ -688,7 +653,7 @@ F 3 "" H 2400 950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR020
+L power:+5V #PWR020
 U 1 1 5915938C
 P 1050 950
 F 0 "#PWR020" H 1050 800 50  0001 C CNN
@@ -699,7 +664,7 @@ F 3 "" H 1050 950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L power:GND #PWR021
 U 1 1 5915A216
 P 2400 4050
 F 0 "#PWR021" H 2400 3800 50  0001 C CNN
@@ -710,7 +675,7 @@ F 3 "" H 2400 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L power:GND #PWR022
 U 1 1 5915AA45
 P 1050 1750
 F 0 "#PWR022" H 1050 1500 50  0001 C CNN
@@ -721,7 +686,7 @@ F 3 "" H 1050 1750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR023
+L power:GND #PWR023
 U 1 1 59166575
 P 6650 1150
 F 0 "#PWR023" H 6650 900 50  0001 C CNN
@@ -732,7 +697,7 @@ F 3 "" H 6650 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +24V #PWR024
+L power:+24V #PWR024
 U 1 1 59168672
 P 9450 800
 F 0 "#PWR024" H 9450 650 50  0001 C CNN
@@ -743,7 +708,7 @@ F 3 "" H 9450 800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NPN_BCE Q4
+L soldering_station-rescue:Q_NPN_BCE Q4
 U 1 1 5916DF03
 P 6550 850
 F 0 "Q4" H 6250 1100 50  0000 L CNN
@@ -754,7 +719,7 @@ F 3 "" H 6550 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM7805CT U4
+L soldering_station-rescue:LM7805CT U4
 U 1 1 5916F3BD
 P 8300 5600
 F 0 "U4" H 8100 5800 50  0000 C CNN
@@ -765,7 +730,7 @@ F 3 "" H 8300 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR025
+L power:+5V #PWR025
 U 1 1 5916F985
 P 9350 5450
 F 0 "#PWR025" H 9350 5300 50  0001 C CNN
@@ -776,7 +741,7 @@ F 3 "" H 9350 5450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR026
+L power:GND #PWR026
 U 1 1 5916FAB8
 P 8300 5950
 F 0 "#PWR026" H 8300 5700 50  0001 C CNN
@@ -787,7 +752,7 @@ F 3 "" H 8300 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR027
+L power:GND #PWR027
 U 1 1 5916FB28
 P 7100 5950
 F 0 "#PWR027" H 7100 5700 50  0001 C CNN
@@ -798,7 +763,7 @@ F 3 "" H 7100 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR028
+L power:GND #PWR028
 U 1 1 5916FB98
 P 8750 5950
 F 0 "#PWR028" H 8750 5700 50  0001 C CNN
@@ -809,7 +774,7 @@ F 3 "" H 8750 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR029
+L power:GND #PWR029
 U 1 1 5916FC08
 P 7800 5950
 F 0 "#PWR029" H 7800 5700 50  0001 C CNN
@@ -820,7 +785,7 @@ F 3 "" H 7800 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C6
+L soldering_station-rescue:CP_Small C6
 U 1 1 5916FF84
 P 8750 5750
 F 0 "C6" H 8850 5750 50  0000 L CNN
@@ -831,7 +796,7 @@ F 3 "" H 8750 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C3
+L soldering_station-rescue:CP_Small C3
 U 1 1 591704BF
 P 7800 5750
 F 0 "C3" H 7900 5700 50  0000 L CNN
@@ -842,7 +807,7 @@ F 3 "" H 7800 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C7
+L soldering_station-rescue:C_Small C7
 U 1 1 591705C3
 P 9050 5750
 F 0 "C7" H 9150 5750 50  0000 L CNN
@@ -853,7 +818,7 @@ F 3 "" H 9050 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C8
+L soldering_station-rescue:C_Small C8
 U 1 1 591706F8
 P 9350 5750
 F 0 "C8" H 9450 5750 50  0000 L CNN
@@ -864,7 +829,7 @@ F 3 "" H 9350 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR030
+L power:GND #PWR030
 U 1 1 591707C3
 P 9050 5950
 F 0 "#PWR030" H 9050 5700 50  0001 C CNN
@@ -875,7 +840,7 @@ F 3 "" H 9050 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR031
+L power:GND #PWR031
 U 1 1 5917083B
 P 9350 5950
 F 0 "#PWR031" H 9350 5700 50  0001 C CNN
@@ -886,7 +851,7 @@ F 3 "" H 9350 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +24V #PWR032
+L power:+24V #PWR032
 U 1 1 59171701
 P 7800 5450
 F 0 "#PWR032" H 7800 5300 50  0001 C CNN
@@ -897,7 +862,7 @@ F 3 "" H 7800 5450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L АЛС324Б1 HG2
+L алс324б1:АЛС324Б1 HG2
 U 1 1 5919A435
 P 5200 5000
 F 0 "HG2" H 5000 5450 50  0000 C CNN
@@ -908,7 +873,7 @@ F 3 "" H 5195 5050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L АЛС324Б1 HG3
+L алс324б1:АЛС324Б1 HG3
 U 1 1 5919A4F5
 P 5200 6000
 F 0 "HG3" H 5000 6450 50  0000 C CNN
@@ -919,7 +884,7 @@ F 3 "" H 5195 6050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ИБ HG1
+L иб:ИБ HG1
 U 1 1 5919A59F
 P 5200 4000
 F 0 "HG1" H 5000 4450 50  0000 C CNN
@@ -930,7 +895,7 @@ F 3 "" H 5195 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L soldering_station-rescue:R R2
 U 1 1 5919BA0B
 P 3600 2700
 F 0 "R2" V 3550 2900 50  0000 C CNN
@@ -941,7 +906,7 @@ F 3 "" H 3600 2700 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R3
+L soldering_station-rescue:R R3
 U 1 1 5919BD22
 P 3600 2800
 F 0 "R3" V 3550 3000 50  0000 C CNN
@@ -952,7 +917,7 @@ F 3 "" H 3600 2800 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R7
+L soldering_station-rescue:R R7
 U 1 1 5919BEFB
 P 3600 3200
 F 0 "R7" V 3550 3400 50  0000 C CNN
@@ -963,7 +928,7 @@ F 3 "" H 3600 3200 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L soldering_station-rescue:R R4
 U 1 1 5919BFDE
 P 3600 2900
 F 0 "R4" V 3550 3100 50  0000 C CNN
@@ -974,7 +939,7 @@ F 3 "" H 3600 2900 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R5
+L soldering_station-rescue:R R5
 U 1 1 5919C0CE
 P 3600 3000
 F 0 "R5" V 3550 3200 50  0000 C CNN
@@ -985,7 +950,7 @@ F 3 "" H 3600 3000 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R6
+L soldering_station-rescue:R R6
 U 1 1 5919C1B7
 P 3600 3100
 F 0 "R6" V 3550 3300 50  0000 C CNN
@@ -996,7 +961,7 @@ F 3 "" H 3600 3100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R8
+L soldering_station-rescue:R R8
 U 1 1 5919C2AB
 P 3600 3300
 F 0 "R8" V 3550 3500 50  0000 C CNN
@@ -1007,7 +972,7 @@ F 3 "" H 3600 3300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Q_PNP_CBE Q1
+L soldering_station-rescue:Q_PNP_CBE Q1
 U 1 1 591A31E1
 P 5650 4000
 F 0 "Q1" H 5400 4100 50  0000 L CNN
@@ -1018,7 +983,7 @@ F 3 "" H 5650 4000 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Q_PNP_CBE Q2
+L soldering_station-rescue:Q_PNP_CBE Q2
 U 1 1 591A32AD
 P 5750 5100
 F 0 "Q2" H 5500 5200 50  0000 L CNN
@@ -1029,7 +994,7 @@ F 3 "" H 5750 5100 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Q_PNP_CBE Q3
+L soldering_station-rescue:Q_PNP_CBE Q3
 U 1 1 591A334F
 P 5750 6100
 F 0 "Q3" H 5500 6200 50  0000 L CNN
@@ -1040,7 +1005,7 @@ F 3 "" H 5750 6100 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R10
+L soldering_station-rescue:R R10
 U 1 1 591A5005
 P 5900 3450
 F 0 "R10" H 6000 3350 50  0000 L CNN
@@ -1051,7 +1016,7 @@ F 3 "" H 5900 3450 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R12
+L soldering_station-rescue:R R12
 U 1 1 591A51FA
 P 6000 4550
 F 0 "R12" H 6100 4450 50  0000 L CNN
@@ -1062,7 +1027,7 @@ F 3 "" H 6000 4550 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R13
+L soldering_station-rescue:R R13
 U 1 1 591A5516
 P 6100 5550
 F 0 "R13" H 6200 5450 50  0000 L CNN
@@ -1073,7 +1038,7 @@ F 3 "" H 6100 5550 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +5V #PWR033
+L power:+5V #PWR033
 U 1 1 591B75F8
 P 5550 3700
 F 0 "#PWR033" H 5550 3550 50  0001 C CNN
@@ -1084,7 +1049,7 @@ F 3 "" H 5550 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR034
+L power:+5V #PWR034
 U 1 1 591B7765
 P 5650 4800
 F 0 "#PWR034" H 5650 4650 50  0001 C CNN
@@ -1095,7 +1060,7 @@ F 3 "" H 5650 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR035
+L power:+5V #PWR035
 U 1 1 591B795C
 P 5650 5800
 F 0 "#PWR035" H 5650 5650 50  0001 C CNN
@@ -1106,7 +1071,7 @@ F 3 "" H 5650 5800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R11
+L soldering_station-rescue:R R11
 U 1 1 591BF1B0
 P 6000 850
 F 0 "R11" V 5793 850 50  0000 C CNN
@@ -1117,7 +1082,7 @@ F 3 "" H 6000 850 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R14
+L soldering_station-rescue:R R14
 U 1 1 591BF2DB
 P 6400 1100
 F 0 "R14" V 6300 1000 50  0000 C CNN
@@ -1128,7 +1093,7 @@ F 3 "" H 6400 1100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D_Bridge_+-AA D5
+L soldering_station-rescue:D_Bridge_+-AA D5
 U 1 1 591D2084
 P 7450 5550
 F 0 "D5" H 7100 5750 50  0000 L CNN
@@ -1139,7 +1104,7 @@ F 3 "" H 7450 5550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P1
+L soldering_station-rescue:CONN_01X02 P1
 U 1 1 591D2FEC
 P 6750 5550
 F 0 "P1" H 6750 5300 50  0000 C CNN
@@ -1150,7 +1115,7 @@ F 3 "" H 6750 5550 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X02 P6
+L soldering_station-rescue:CONN_01X02 P6
 U 1 1 5922F5D6
 P 9700 1050
 F 0 "P6" H 9650 1300 50  0000 L CNN
@@ -1161,7 +1126,7 @@ F 3 "" H 9700 1050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P8
+L soldering_station-rescue:CONN_01X02 P8
 U 1 1 5922F6D0
 P 9700 1800
 F 0 "P8" H 9550 2000 50  0000 C CNN
@@ -1172,7 +1137,7 @@ F 3 "" H 9700 1800 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L CONN_01X03 P7
+L soldering_station-rescue:CONN_01X03 P7
 U 1 1 5922F790
 P 9700 1400
 F 0 "P7" H 9200 1600 50  0000 L CNN
@@ -1183,7 +1148,7 @@ F 3 "" H 9700 1400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C9
+L soldering_station-rescue:C_Small C9
 U 1 1 59257B5A
 P 1300 1600
 F 0 "C9" V 1250 1350 50  0000 C CNN
@@ -1194,7 +1159,7 @@ F 3 "" H 1300 1600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Rotary_Encoder_Switch SW2
+L soldering_station-rescue:Rotary_Encoder_Switch SW2
 U 1 1 59883EF1
 P 5350 2800
 F 0 "SW2" V 5300 3150 50  0000 L CNN
@@ -1205,7 +1170,7 @@ F 3 "" H 5350 3060 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 591549FF
 P 5450 3200
 F 0 "#PWR018" H 5450 2950 50  0001 C CNN
@@ -1226,20 +1191,20 @@ Connection ~ 7850 1500
 Wire Wire Line
 	7750 1500 7850 1500
 Wire Wire Line
-	7750 1300 8200 1300
+	7750 1300 8150 1300
 Wire Wire Line
 	7550 1700 7550 1900
 Wire Wire Line
 	7550 800  7550 1100
 Connection ~ 7050 1400
 Wire Wire Line
-	6300 1400 6700 1400
+	6300 1400 6650 1400
 Wire Wire Line
 	6650 1600 6650 1400
 Wire Wire Line
 	6650 1800 6650 1900
 Wire Wire Line
-	7000 1400 7150 1400
+	7000 1400 7050 1400
 Wire Wire Line
 	7050 900  7050 1400
 Wire Wire Line
@@ -1250,11 +1215,11 @@ Wire Wire Line
 Wire Wire Line
 	7250 750  7250 700 
 Wire Wire Line
-	7400 900  7850 900 
+	7400 900  7450 900 
 Wire Wire Line
 	7450 700  7450 900 
 Wire Wire Line
-	7850 1250 7850 1550
+	7850 1250 7850 1500
 Wire Wire Line
 	7850 1850 7850 1900
 Wire Wire Line
@@ -1268,20 +1233,20 @@ Connection ~ 7850 4450
 Wire Wire Line
 	7750 4450 7850 4450
 Wire Wire Line
-	7750 4250 8200 4250
+	7750 4250 8150 4250
 Wire Wire Line
 	7550 4650 7550 4850
 Wire Wire Line
 	7550 3750 7550 4050
 Connection ~ 7050 4350
 Wire Wire Line
-	6300 4350 6700 4350
+	6300 4350 6650 4350
 Wire Wire Line
 	6650 4550 6650 4350
 Wire Wire Line
 	6650 4750 6650 4850
 Wire Wire Line
-	7000 4350 7150 4350
+	7000 4350 7050 4350
 Wire Wire Line
 	7050 3850 7050 4350
 Wire Wire Line
@@ -1292,11 +1257,11 @@ Wire Wire Line
 Wire Wire Line
 	7250 3700 7250 3650
 Wire Wire Line
-	7400 3850 7850 3850
+	7400 3850 7450 3850
 Wire Wire Line
 	7450 3650 7450 3850
 Wire Wire Line
-	7850 4200 7850 4500
+	7850 4200 7850 4450
 Wire Wire Line
 	7850 4800 7850 4850
 Wire Wire Line
@@ -1316,13 +1281,13 @@ Wire Wire Line
 Wire Wire Line
 	8600 2800 8650 2800
 Wire Wire Line
-	8950 2800 9500 2800
+	8950 2800 9050 2800
 Wire Wire Line
 	9050 2800 9050 2750
 Wire Wire Line
 	9050 3100 9050 3050
 Wire Wire Line
-	8950 3050 9500 3050
+	8950 3050 9050 3050
 Wire Wire Line
 	8900 2500 8350 2500
 Wire Wire Line
@@ -1338,7 +1303,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 2800 7600 2800
 Wire Wire Line
-	7600 2800 7600 3350
+	7600 2800 7600 3050
 Wire Wire Line
 	7200 2600 7250 2600
 Wire Wire Line
@@ -1369,7 +1334,7 @@ Wire Wire Line
 Wire Wire Line
 	9500 4350 9350 4350
 Wire Wire Line
-	8500 4250 9500 4250
+	8500 4250 8550 4250
 Wire Wire Line
 	9050 3950 9500 3950
 Wire Wire Line
@@ -1385,7 +1350,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 1700 1050 1700
 Wire Wire Line
-	1050 1600 1050 1750
+	1050 1600 1050 1700
 Wire Wire Line
 	1450 1300 1500 1300
 Wire Wire Line
@@ -1419,7 +1384,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 1500 8900 2200
 Wire Wire Line
-	8500 1300 9500 1300
+	8500 1300 8550 1300
 Wire Wire Line
 	9500 1100 9350 1100
 Wire Wire Line
@@ -1429,19 +1394,19 @@ Wire Wire Line
 Wire Wire Line
 	6650 600  6650 650 
 Wire Wire Line
-	6650 1050 6650 1150
+	6650 1050 6650 1100
 Wire Wire Line
 	9500 1000 9450 1000
 Wire Wire Line
 	9450 1000 9450 800 
 Wire Wire Line
-	7750 5550 7900 5550
+	7750 5550 7800 5550
 Wire Wire Line
-	8700 5550 9350 5550
+	8700 5550 8750 5550
 Wire Wire Line
 	9050 5550 9050 5650
 Wire Wire Line
-	9350 5450 9350 5650
+	9350 5450 9350 5550
 Connection ~ 9050 5550
 Wire Wire Line
 	9350 5850 9350 5950
@@ -1452,7 +1417,7 @@ Wire Wire Line
 Wire Wire Line
 	8300 5850 8300 5950
 Wire Wire Line
-	7800 5450 7800 5650
+	7800 5450 7800 5550
 Connection ~ 7800 5550
 Wire Wire Line
 	7800 5850 7800 5950
@@ -1461,7 +1426,7 @@ Wire Wire Line
 	8750 5550 8750 5650
 Connection ~ 8750 5550
 Wire Wire Line
-	4750 2700 4750 5650
+	4750 2700 4750 3650
 Wire Wire Line
 	4750 3650 4800 3650
 Wire Wire Line
@@ -1483,37 +1448,37 @@ Wire Wire Line
 Wire Wire Line
 	3750 2800 4650 2800
 Wire Wire Line
-	4650 2800 4650 5750
+	4650 2800 4650 3750
 Wire Wire Line
 	4650 3750 4800 3750
 Wire Wire Line
 	3750 2900 4550 2900
 Wire Wire Line
-	4550 2900 4550 5850
+	4550 2900 4550 3850
 Wire Wire Line
 	4550 3850 4800 3850
 Wire Wire Line
 	3750 3000 4450 3000
 Wire Wire Line
-	4450 3000 4450 5950
+	4450 3000 4450 3950
 Wire Wire Line
 	4450 3950 4800 3950
 Wire Wire Line
 	3750 3100 4350 3100
 Wire Wire Line
-	4350 3100 4350 6050
+	4350 3100 4350 4050
 Wire Wire Line
 	4350 4050 4800 4050
 Wire Wire Line
 	3750 3200 4250 3200
 Wire Wire Line
-	4250 3200 4250 6150
+	4250 3200 4250 4150
 Wire Wire Line
 	4250 4150 4800 4150
 Wire Wire Line
 	3750 3300 4150 3300
 Wire Wire Line
-	4150 3300 4150 6250
+	4150 3300 4150 4250
 Wire Wire Line
 	4150 4250 4800 4250
 Wire Wire Line
@@ -1616,7 +1581,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 1100 6200 850 
 Wire Wire Line
-	6150 850  6350 850 
+	6150 850  6200 850 
 Connection ~ 6200 850 
 Wire Wire Line
 	5850 850  5800 850 
@@ -1680,7 +1645,7 @@ Wire Wire Line
 	1200 1600 1050 1600
 Connection ~ 1050 1700
 Wire Wire Line
-	1050 950  1050 1500
+	1050 950  1050 1300
 Connection ~ 1050 1300
 Wire Wire Line
 	4850 2500 3400 2500
@@ -1695,10 +1660,90 @@ Wire Wire Line
 Wire Wire Line
 	5650 3150 5650 2400
 Wire Wire Line
-	5250 3150 5650 3150
+	5250 3150 5450 3150
 Wire Wire Line
 	5250 3150 5250 3100
 Wire Wire Line
-	5450 3100 5450 3200
+	5450 3100 5450 3150
 Connection ~ 5450 3150
+Wire Wire Line
+	6650 1400 6700 1400
+Wire Wire Line
+	7850 1500 7850 1550
+Wire Wire Line
+	7050 1400 7150 1400
+Wire Wire Line
+	7450 900  7850 900 
+Wire Wire Line
+	6650 4350 6700 4350
+Wire Wire Line
+	7850 4450 7850 4500
+Wire Wire Line
+	7050 4350 7150 4350
+Wire Wire Line
+	7450 3850 7850 3850
+Wire Wire Line
+	9050 2800 9500 2800
+Wire Wire Line
+	9050 3050 9500 3050
+Wire Wire Line
+	7600 3050 7600 3350
+Wire Wire Line
+	9050 5550 9350 5550
+Wire Wire Line
+	7800 5550 7900 5550
+Wire Wire Line
+	7800 5550 7800 5650
+Wire Wire Line
+	9350 5550 9350 5650
+Wire Wire Line
+	8750 5550 9050 5550
+Wire Wire Line
+	4750 3650 4750 4650
+Wire Wire Line
+	4750 4650 4750 5650
+Wire Wire Line
+	4650 3750 4650 4750
+Wire Wire Line
+	4650 4750 4650 5750
+Wire Wire Line
+	4550 3850 4550 4850
+Wire Wire Line
+	4450 3950 4450 4950
+Wire Wire Line
+	4350 4050 4350 5050
+Wire Wire Line
+	4250 4150 4250 5150
+Wire Wire Line
+	4150 4250 4150 5250
+Wire Wire Line
+	4550 4850 4550 5850
+Wire Wire Line
+	4450 4950 4450 5950
+Wire Wire Line
+	4350 5050 4350 6050
+Wire Wire Line
+	4250 5150 4250 6150
+Wire Wire Line
+	4150 5250 4150 6250
+Wire Wire Line
+	6650 1100 6650 1150
+Wire Wire Line
+	6200 850  6350 850 
+Wire Wire Line
+	8150 1300 8200 1300
+Wire Wire Line
+	8550 1300 9500 1300
+Wire Wire Line
+	8150 4250 8200 4250
+Wire Wire Line
+	8550 4250 9500 4250
+Wire Wire Line
+	1050 1700 1050 1750
+Wire Wire Line
+	1050 1300 1050 1500
+Wire Wire Line
+	5450 3150 5650 3150
+Wire Wire Line
+	5450 3150 5450 3200
 $EndSCHEMATC
