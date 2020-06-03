@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:soldering_station-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -323,7 +323,7 @@ F 3 "" H 8750 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L atmel:ATMEGA8A-P IC1
+L soldering_station-rescue:ATMEGA8A-P-atmel IC1
 U 1 1 5912C25D
 P 1950 2400
 F 0 "IC1" H 2400 3800 50  0000 C CNN
@@ -345,7 +345,7 @@ F 3 "" H 10550 1550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:Buzzer BZ1
+L soldering_station-rescue:Buzzer-soldering_station-rescue BZ1
 U 1 1 5913130E
 P 3150 3900
 F 0 "BZ1" H 3200 3750 50  0000 L CNN
@@ -378,7 +378,7 @@ F 3 "" H 3000 3600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L soldering_station-rescue:MOC3023M U2
+L soldering_station-rescue:MOC3023M-soldering_station-rescue U2
 U 1 1 59143D58
 P 9150 2700
 F 0 "U2" H 8900 2900 50  0000 C CNN
@@ -389,7 +389,7 @@ F 3 "" H 9125 2700 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:MOC3023M U3
+L soldering_station-rescue:MOC3023M-soldering_station-rescue U3
 U 1 1 59143E30
 P 9150 3150
 F 0 "U3" H 8900 2950 50  0000 C CNN
@@ -426,7 +426,7 @@ L soldering_station-rescue:R R25
 U 1 1 5914511C
 P 9650 2800
 F 0 "R25" V 9450 2800 50  0000 C CNN
-F 1 "360" V 9550 2800 50  0000 C CNN
+F 1 "270" V 9550 2800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 9580 2800 50  0001 C CNN
 F 3 "" H 9650 2800 50  0000 C CNN
 	1    9650 2800
@@ -437,55 +437,33 @@ L soldering_station-rescue:R R26
 U 1 1 5914528A
 P 9650 3050
 F 0 "R26" V 9750 2950 50  0000 C CNN
-F 1 "360" V 9750 3150 50  0000 C CNN
+F 1 "270" V 9750 3150 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 9580 3050 50  0001 C CNN
 F 3 "" H 9650 3050 50  0000 C CNN
 	1    9650 3050
 	0    1    -1   0   
 $EndComp
 $Comp
-L soldering_station-rescue:D D3
-U 1 1 591456C9
-P 10000 2800
-F 0 "D3" H 10000 2600 50  0000 C CNN
-F 1 "1N4007" H 10000 2700 50  0000 C CNN
-F 2 "Diodes_THT:D_5W_P5.08mm_Vertical_AnodeUp" H 10000 2800 50  0001 C CNN
-F 3 "" H 10000 2800 50  0000 C CNN
-	1    10000 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L bt139:BT139 VD1
+L soldering_station-rescue:BT139-bt139 VD1
 U 1 1 59145DE9
-P 10250 2600
-F 0 "VD1" H 10300 2350 50  0000 L CNN
-F 1 "BT139" H 10300 2450 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-220_Vertical" V 10325 2625 50  0001 C CNN
-F 3 "" V 10250 2600 50  0000 C CNN
-	1    10250 2600
-	1    0    0    1   
-$EndComp
-$Comp
-L bt139:BT139 VD2
-U 1 1 59145E5D
-P 10250 3250
-F 0 "VD2" H 10379 3296 50  0000 L CNN
-F 1 "BT139" H 10379 3205 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-220_Vertical" V 10325 3275 50  0001 C CNN
-F 3 "" V 10250 3250 50  0000 C CNN
-	1    10250 3250
+P 10250 2500
+F 0 "VD1" H 10300 2250 50  0000 L CNN
+F 1 "BT134" H 10300 2350 50  0000 L CNN
+F 2 "lib:sot82" V 10325 2525 50  0001 C CNN
+F 3 "" V 10250 2500 50  0000 C CNN
+	1    10250 2500
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:D D4
-U 1 1 5914649B
-P 10000 3050
-F 0 "D4" H 10000 3150 50  0000 C CNN
-F 1 "1N4007" H 9750 3150 50  0000 C CNN
-F 2 "Diodes_THT:D_5W_P5.08mm_Vertical_AnodeUp" H 10000 3050 50  0001 C CNN
-F 3 "" H 10000 3050 50  0000 C CNN
-	1    10000 3050
-	-1   0    0    -1  
+L soldering_station-rescue:BT139-bt139 VD2
+U 1 1 59145E5D
+P 10250 3350
+F 0 "VD2" H 10379 3396 50  0000 L CNN
+F 1 "BT134" H 10379 3305 50  0000 L CNN
+F 2 "lib:sot82" V 10325 3375 50  0001 C CNN
+F 3 "" V 10250 3350 50  0000 C CNN
+	1    10250 3350
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR013
@@ -499,7 +477,7 @@ F 3 "" H 8800 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:LED D1
+L soldering_station-rescue:LED-soldering_station-rescue D1
 U 1 1 59146F29
 P 8600 2600
 F 0 "D1" H 8650 2450 50  0000 C CNN
@@ -510,7 +488,7 @@ F 3 "" H 8600 2600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L soldering_station-rescue:LED D2
+L soldering_station-rescue:LED-soldering_station-rescue D2
 U 1 1 59147091
 P 8600 3250
 F 0 "D2" H 8650 3100 50  0000 C CNN
@@ -521,7 +499,7 @@ F 3 "" H 8600 3250 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L soldering_station-rescue:CONN_01X02 P2
+L soldering_station-rescue:CONN_01X02-soldering_station-rescue P2
 U 1 1 5914C58F
 P 10900 2750
 F 0 "P2" H 10700 2900 50  0000 L CNN
@@ -532,7 +510,7 @@ F 3 "" H 10900 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:CONN_01X02 P3
+L soldering_station-rescue:CONN_01X02-soldering_station-rescue P3
 U 1 1 5914D402
 P 10900 3100
 F 0 "P3" H 10550 2950 50  0000 L CNN
@@ -543,7 +521,7 @@ F 3 "" H 10900 3100 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L switch:Switch SB1
+L soldering_station-rescue:Switch-switch SB1
 U 1 1 5914E255
 P 7850 3250
 F 0 "SB1" H 7850 3507 60  0000 C CNN
@@ -565,7 +543,7 @@ F 3 "" H 10550 4850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:CONN_01X02 P4
+L soldering_station-rescue:CONN_01X02-soldering_station-rescue P4
 U 1 1 5914FDDB
 P 10900 3900
 F 0 "P4" H 10850 4150 50  0000 L CNN
@@ -576,7 +554,7 @@ F 3 "" H 10900 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:CONN_01X02 P5
+L soldering_station-rescue:CONN_01X02-soldering_station-rescue P5
 U 1 1 5914FEAB
 P 10900 4300
 F 0 "P5" H 10850 4500 50  0000 L CNN
@@ -686,7 +664,7 @@ F 3 "" H 10650 800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:Q_NPN_BCE Q4
+L soldering_station-rescue:Q_NPN_BCE-soldering_station-rescue Q4
 U 1 1 5916DF03
 P 7750 850
 F 0 "Q4" H 7450 1100 50  0000 L CNN
@@ -697,7 +675,7 @@ F 3 "" H 7750 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:LM7805CT U4
+L soldering_station-rescue:LM7805CT-soldering_station-rescue U4
 U 1 1 5916F3BD
 P 9500 5600
 F 0 "U4" H 9300 5800 50  0000 C CNN
@@ -763,7 +741,7 @@ F 3 "" H 9000 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:CP_Small C6
+L soldering_station-rescue:CP_Small-soldering_station-rescue C6
 U 1 1 5916FF84
 P 9950 5750
 F 0 "C6" H 10050 5750 50  0000 L CNN
@@ -774,7 +752,7 @@ F 3 "" H 9950 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:CP_Small C3
+L soldering_station-rescue:CP_Small-soldering_station-rescue C3
 U 1 1 591704BF
 P 9000 5750
 F 0 "C3" H 9100 5700 50  0000 L CNN
@@ -840,7 +818,7 @@ F 3 "" H 9000 5450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L алс324б1:АЛС324Б1 HG2
+L soldering_station-rescue:АЛС324Б1-алс324б1 HG2
 U 1 1 5919A435
 P 5550 4800
 F 0 "HG2" H 5350 5250 50  0000 C CNN
@@ -851,7 +829,7 @@ F 3 "" H 5545 4850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L алс324б1:АЛС324Б1 HG3
+L soldering_station-rescue:АЛС324Б1-алс324б1 HG3
 U 1 1 5919A4F5
 P 5550 5800
 F 0 "HG3" H 5350 6250 50  0000 C CNN
@@ -862,7 +840,7 @@ F 3 "" H 5545 5850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L иб:ИБ HG1
+L soldering_station-rescue:ИБ-иб HG1
 U 1 1 5919A59F
 P 5550 3800
 F 0 "HG1" H 5350 4250 50  0000 C CNN
@@ -950,7 +928,7 @@ F 3 "" H 4250 3300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L soldering_station-rescue:Q_PNP_CBE Q1
+L soldering_station-rescue:Q_PNP_CBE-soldering_station-rescue Q1
 U 1 1 591A31E1
 P 6700 4000
 F 0 "Q1" H 7000 3800 50  0000 L CNN
@@ -961,7 +939,7 @@ F 3 "" H 6700 4000 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L soldering_station-rescue:Q_PNP_CBE Q2
+L soldering_station-rescue:Q_PNP_CBE-soldering_station-rescue Q2
 U 1 1 591A32AD
 P 6700 4700
 F 0 "Q2" H 6500 4450 50  0000 L CNN
@@ -972,7 +950,7 @@ F 3 "" H 6700 4700 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L soldering_station-rescue:Q_PNP_CBE Q3
+L soldering_station-rescue:Q_PNP_CBE-soldering_station-rescue Q3
 U 1 1 591A334F
 P 6700 5400
 F 0 "Q3" H 6400 5200 50  0000 L CNN
@@ -1071,7 +1049,7 @@ F 3 "" H 7600 1100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L soldering_station-rescue:D_Bridge_+-AA D5
+L soldering_station-rescue:D_Bridge_+-AA-soldering_station-rescue D5
 U 1 1 591D2084
 P 8650 5550
 F 0 "D5" H 8300 5750 50  0000 L CNN
@@ -1082,7 +1060,7 @@ F 3 "" H 8650 5550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:CONN_01X02 P1
+L soldering_station-rescue:CONN_01X02-soldering_station-rescue P1
 U 1 1 591D2FEC
 P 7950 5550
 F 0 "P1" H 7950 5300 50  0000 C CNN
@@ -1093,7 +1071,7 @@ F 3 "" H 7950 5550 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L soldering_station-rescue:CONN_01X02 P6
+L soldering_station-rescue:CONN_01X02-soldering_station-rescue P6
 U 1 1 5922F5D6
 P 10900 1050
 F 0 "P6" H 10850 1300 50  0000 L CNN
@@ -1104,7 +1082,7 @@ F 3 "" H 10900 1050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L soldering_station-rescue:CONN_01X02 P8
+L soldering_station-rescue:CONN_01X02-soldering_station-rescue P8
 U 1 1 5922F6D0
 P 10900 1800
 F 0 "P8" H 10750 2000 50  0000 C CNN
@@ -1115,7 +1093,7 @@ F 3 "" H 10900 1800 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L soldering_station-rescue:CONN_01X03 P7
+L soldering_station-rescue:CONN_01X03-soldering_station-rescue P7
 U 1 1 5922F790
 P 10900 1400
 F 0 "P7" H 10400 1600 50  0000 L CNN
@@ -1137,7 +1115,7 @@ F 3 "" H 850 1600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L soldering_station-rescue:Rotary_Encoder_Switch SW2
+L soldering_station-rescue:Rotary_Encoder_Switch-soldering_station-rescue SW2
 U 1 1 59883EF1
 P 5500 2800
 F 0 "SW2" V 5450 3150 50  0000 L CNN
@@ -1251,31 +1229,11 @@ Wire Wire Line
 Wire Wire Line
 	9450 3050 9500 3050
 Wire Wire Line
-	9800 3050 9850 3050
-Wire Wire Line
 	9450 2800 9500 2800
 Wire Wire Line
-	9800 2800 9850 2800
+	10250 2800 10250 2650
 Wire Wire Line
-	10150 2800 10250 2800
-Wire Wire Line
-	10250 2800 10250 2750
-Wire Wire Line
-	10250 3100 10250 3050
-Wire Wire Line
-	10150 3050 10250 3050
-Wire Wire Line
-	10100 2500 9550 2500
-Wire Wire Line
-	9550 2500 9550 2600
-Wire Wire Line
-	9550 2600 9450 2600
-Wire Wire Line
-	10100 3350 9550 3350
-Wire Wire Line
-	9550 3350 9550 3250
-Wire Wire Line
-	9550 3250 9450 3250
+	10250 3200 10250 3050
 Wire Wire Line
 	8850 2800 8800 2800
 Wire Wire Line
@@ -1304,7 +1262,7 @@ Wire Wire Line
 Wire Wire Line
 	10550 4350 10550 4850
 Wire Wire Line
-	10250 1750 10250 2450
+	10250 1750 10250 2350
 Wire Wire Line
 	10700 4350 10550 4350
 Wire Wire Line
@@ -1314,7 +1272,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 3850 10700 3850
 Wire Wire Line
-	10250 3950 10250 3400
+	10250 3950 10250 3500
 Wire Wire Line
 	8100 3250 8050 3250
 Wire Wire Line
@@ -1680,7 +1638,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 1300 2950 1300
 $Comp
-L conn:CONN_3 K2
+L soldering_station-rescue:CONN_3-conn K2
 U 1 1 5DE2CB58
 P 6500 6550
 F 0 "K2" V 6650 6500 50  0000 L CNN
@@ -1703,7 +1661,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 4250 6600 4200
 $Comp
-L conn:CONN_3 K1
+L soldering_station-rescue:CONN_3-conn K1
 U 1 1 5DE67BB4
 P 6050 6550
 F 0 "K1" V 6200 6600 50  0000 R CNN
@@ -1724,7 +1682,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 6200 5950 6150
 $Comp
-L conn:CONN_7 P10
+L soldering_station-rescue:CONN_7-conn P10
 U 1 1 5DF4D6C2
 P 3700 3000
 F 0 "P10" H 3650 3450 60  0000 C CNN
@@ -1749,7 +1707,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 3300 4100 3300
 $Comp
-L conn:CONN_7 P9
+L soldering_station-rescue:CONN_7-conn P9
 U 1 1 5E0351E0
 P 3350 3000
 F 0 "P9" H 3050 3450 60  0000 L CNN
@@ -1794,4 +1752,12 @@ Wire Wire Line
 	2950 2400 5400 2400
 Wire Wire Line
 	2950 2300 5600 2300
+Wire Wire Line
+	9800 2800 10250 2800
+Wire Wire Line
+	9450 2600 10100 2600
+Wire Wire Line
+	9800 3050 10250 3050
+Wire Wire Line
+	9450 3250 10100 3250
 $EndSCHEMATC

@@ -1,103 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# atmel_ATMEGA8A-P
-#
-DEF atmel_ATMEGA8A-P IC 0 40 Y Y 1 F N
-F0 "IC" -700 1250 50 H V L BNN
-F1 "atmel_ATMEGA8A-P" 300 -1400 50 H V L BNN
-F2 "DIL28" -600 -1350 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- 28DIP-ELL600
- 28dip600
-$ENDFPLIST
-DRAW
-S -700 1200 800 -1300 0 1 10 f
-X PC6(~RESET~) 1 -900 1100 200 R 40 40 1 1 B I
-X PB7(XTAL2/TOSC2) 10 -900 200 200 R 40 40 1 1 B
-X (T1)PD5 11 1000 -800 200 L 40 40 1 1 B
-X (AIN0)PD6 12 1000 -900 200 L 40 40 1 1 B
-X (AIN1)PD7 13 1000 -1000 200 L 40 40 1 1 B
-X (ICP)PB0 14 1000 1100 200 L 40 40 1 1 B
-X (OC1A)PB1 15 1000 1000 200 L 40 40 1 1 B
-X (~SS~/OC1B)PB2 16 1000 900 200 L 40 40 1 1 B
-X (MOSI/OC2)PB3 17 1000 800 200 L 40 40 1 1 B
-X (MISO)PB4 18 1000 700 200 L 40 40 1 1 B
-X (SCK)PB5 19 1000 600 200 L 40 40 1 1 B
-X (RXD)PD0 2 1000 -300 200 L 40 40 1 1 B
-X AVCC 20 -900 900 200 R 40 40 1 1 W
-X AREF 21 -900 800 200 R 40 40 1 1 B
-X AGND 22 -900 700 200 R 40 40 1 1 W
-X (ADC0)PC0 23 1000 400 200 L 40 40 1 1 B
-X (ADC1)PC1 24 1000 300 200 L 40 40 1 1 B
-X (ADC2)PC2 25 1000 200 200 L 40 40 1 1 B
-X (ADC3)PC3 26 1000 100 200 L 40 40 1 1 B
-X (ADC4/SDA)PC4 27 1000 0 200 L 40 40 1 1 B
-X (ADC5/SCL)PC5 28 1000 -100 200 L 40 40 1 1 B
-X (TXD)PD1 3 1000 -400 200 L 40 40 1 1 B
-X (INT0)PD2 4 1000 -500 200 L 40 40 1 1 B
-X (INT1)PD3 5 1000 -600 200 L 40 40 1 1 B
-X (XCK/T0)PD4 6 1000 -700 200 L 40 40 1 1 B
-X VCC 7 0 1400 200 D 40 40 1 1 W
-X GND 8 0 -1500 200 U 40 40 1 1 W
-X PB6(XTAL1/TOSC1) 9 -900 400 200 R 40 40 1 1 B
-ENDDRAW
-ENDDEF
-#
-# bt139_BT139
-#
-DEF bt139_BT139 VD 0 0 Y N 1 F N
-F0 "VD" 150 50 50 H V L CNN
-F1 "bt139_BT139" 150 -50 50 H V L CNN
-F2 "" 75 25 50 V V C CNN
-F3 "" 0 0 50 V V C CNN
-DRAW
-P 2 0 1 8 -100 -50 100 -50 N
-P 2 0 1 8 -100 50 100 50 N
-P 2 0 1 0 -50 -100 -25 -50 N
-P 3 0 1 8 -100 50 -50 -50 0 50 N
-P 3 0 1 8 0 -50 50 50 100 -50 N
-X A1 1 0 -150 100 U 50 50 1 1 P
-X A2 2 0 150 100 D 50 50 1 1 P
-X G 3 -150 -100 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# conn_CONN_3
-#
-DEF conn_CONN_3 K 0 40 Y N 1 F N
-F0 "K" -50 0 50 V V C CNN
-F1 "conn_CONN_3" 50 0 40 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -100 150 100 -150 0 1 0 N
-X P1 1 -350 100 250 R 60 60 1 1 P I
-X PM 2 -350 0 250 R 60 60 1 1 P I
-X P3 3 -350 -100 250 R 60 60 1 1 P I
-ENDDRAW
-ENDDEF
-#
-# conn_CONN_7
-#
-DEF conn_CONN_7 P 0 40 Y N 1 F N
-F0 "P" -30 0 60 V V C CNN
-F1 "conn_CONN_7" 70 0 60 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -100 350 150 -350 0 1 0 N
-X P1 1 -350 300 250 R 50 50 1 1 P I
-X P2 2 -350 200 250 R 50 50 1 1 P I
-X P3 3 -350 100 250 R 50 50 1 1 P I
-X P4 4 -350 0 250 R 50 50 1 1 P I
-X P5 5 -350 -100 250 R 50 50 1 1 P I
-X P6 6 -350 -200 250 R 50 50 1 1 P I
-X P7 7 -350 -300 250 R 50 50 1 1 P I
-ENDDRAW
-ENDDEF
-#
 # power_+24V
 #
 DEF power_+24V #PWR 0 0 Y Y 1 F P
@@ -141,11 +44,74 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_Buzzer
+# soldering_station-rescue_ATMEGA8A-P-atmel
 #
-DEF soldering_station-rescue_Buzzer BZ 0 1 Y N 1 F N
+DEF soldering_station-rescue_ATMEGA8A-P-atmel IC 0 40 Y Y 1 F N
+F0 "IC" -700 1250 50 H V L BNN
+F1 "soldering_station-rescue_ATMEGA8A-P-atmel" 300 -1400 50 H V L BNN
+F2 "DIL28" -600 -1350 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ 28DIP-ELL600
+ 28dip600
+$ENDFPLIST
+DRAW
+S -700 1200 800 -1300 0 1 10 f
+X PC6(~RESET~) 1 -900 1100 200 R 40 40 1 1 B I
+X PB7(XTAL2/TOSC2) 10 -900 200 200 R 40 40 1 1 B
+X (T1)PD5 11 1000 -800 200 L 40 40 1 1 B
+X (AIN0)PD6 12 1000 -900 200 L 40 40 1 1 B
+X (AIN1)PD7 13 1000 -1000 200 L 40 40 1 1 B
+X (ICP)PB0 14 1000 1100 200 L 40 40 1 1 B
+X (OC1A)PB1 15 1000 1000 200 L 40 40 1 1 B
+X (~SS~/OC1B)PB2 16 1000 900 200 L 40 40 1 1 B
+X (MOSI/OC2)PB3 17 1000 800 200 L 40 40 1 1 B
+X (MISO)PB4 18 1000 700 200 L 40 40 1 1 B
+X (SCK)PB5 19 1000 600 200 L 40 40 1 1 B
+X (RXD)PD0 2 1000 -300 200 L 40 40 1 1 B
+X AVCC 20 -900 900 200 R 40 40 1 1 W
+X AREF 21 -900 800 200 R 40 40 1 1 B
+X AGND 22 -900 700 200 R 40 40 1 1 W
+X (ADC0)PC0 23 1000 400 200 L 40 40 1 1 B
+X (ADC1)PC1 24 1000 300 200 L 40 40 1 1 B
+X (ADC2)PC2 25 1000 200 200 L 40 40 1 1 B
+X (ADC3)PC3 26 1000 100 200 L 40 40 1 1 B
+X (ADC4/SDA)PC4 27 1000 0 200 L 40 40 1 1 B
+X (ADC5/SCL)PC5 28 1000 -100 200 L 40 40 1 1 B
+X (TXD)PD1 3 1000 -400 200 L 40 40 1 1 B
+X (INT0)PD2 4 1000 -500 200 L 40 40 1 1 B
+X (INT1)PD3 5 1000 -600 200 L 40 40 1 1 B
+X (XCK/T0)PD4 6 1000 -700 200 L 40 40 1 1 B
+X VCC 7 0 1400 200 D 40 40 1 1 W
+X GND 8 0 -1500 200 U 40 40 1 1 W
+X PB6(XTAL1/TOSC1) 9 -900 400 200 R 40 40 1 1 B
+ENDDRAW
+ENDDEF
+#
+# soldering_station-rescue_BT139-bt139
+#
+DEF soldering_station-rescue_BT139-bt139 VD 0 0 Y N 1 F N
+F0 "VD" 150 50 50 H V L CNN
+F1 "soldering_station-rescue_BT139-bt139" 150 -50 50 H V L CNN
+F2 "" 75 25 50 V V C CNN
+F3 "" 0 0 50 V V C CNN
+DRAW
+P 2 0 1 8 -100 -50 100 -50 N
+P 2 0 1 8 -100 50 100 50 N
+P 2 0 1 0 -50 -100 -25 -50 N
+P 3 0 1 8 -100 50 -50 -50 0 50 N
+P 3 0 1 8 0 -50 50 50 100 -50 N
+X A1 1 0 -150 100 U 50 50 1 1 P
+X A2 2 0 150 100 D 50 50 1 1 P
+X G 3 -150 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# soldering_station-rescue_Buzzer-soldering_station-rescue
+#
+DEF soldering_station-rescue_Buzzer-soldering_station-rescue BZ 0 1 Y N 1 F N
 F0 "BZ" 150 50 50 H V L CNN
-F1 "soldering_station-rescue_Buzzer" 150 -50 50 H V L CNN
+F1 "soldering_station-rescue_Buzzer-soldering_station-rescue" 150 -50 50 H V L CNN
 F2 "" -25 100 50 V I C CNN
 F3 "" -25 100 50 V I C CNN
 $FPLIST
@@ -161,11 +127,11 @@ X + 2 -100 -100 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_CONN_01X02
+# soldering_station-rescue_CONN_01X02-soldering_station-rescue
 #
-DEF soldering_station-rescue_CONN_01X02 J 0 40 Y N 1 F N
+DEF soldering_station-rescue_CONN_01X02-soldering_station-rescue J 0 40 Y N 1 F N
 F0 "J" 0 150 50 H V C CNN
-F1 "soldering_station-rescue_CONN_01X02" 100 0 50 V V C CNN
+F1 "soldering_station-rescue_CONN_01X02-soldering_station-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -183,11 +149,11 @@ X P2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_CONN_01X03
+# soldering_station-rescue_CONN_01X03-soldering_station-rescue
 #
-DEF soldering_station-rescue_CONN_01X03 J 0 40 Y N 1 F N
+DEF soldering_station-rescue_CONN_01X03-soldering_station-rescue J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "soldering_station-rescue_CONN_01X03" 100 0 50 V V C CNN
+F1 "soldering_station-rescue_CONN_01X03-soldering_station-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -207,11 +173,45 @@ X P3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_CP_Small
+# soldering_station-rescue_CONN_3-conn
 #
-DEF soldering_station-rescue_CP_Small C 0 10 N N 1 F N
+DEF soldering_station-rescue_CONN_3-conn K 0 40 Y N 1 F N
+F0 "K" -50 0 50 V V C CNN
+F1 "soldering_station-rescue_CONN_3-conn" 50 0 40 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 150 100 -150 0 1 0 N
+X P1 1 -350 100 250 R 60 60 1 1 P I
+X PM 2 -350 0 250 R 60 60 1 1 P I
+X P3 3 -350 -100 250 R 60 60 1 1 P I
+ENDDRAW
+ENDDEF
+#
+# soldering_station-rescue_CONN_7-conn
+#
+DEF soldering_station-rescue_CONN_7-conn P 0 40 Y N 1 F N
+F0 "P" -30 0 60 V V C CNN
+F1 "soldering_station-rescue_CONN_7-conn" 70 0 60 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 350 150 -350 0 1 0 N
+X P1 1 -350 300 250 R 50 50 1 1 P I
+X P2 2 -350 200 250 R 50 50 1 1 P I
+X P3 3 -350 100 250 R 50 50 1 1 P I
+X P4 4 -350 0 250 R 50 50 1 1 P I
+X P5 5 -350 -100 250 R 50 50 1 1 P I
+X P6 6 -350 -200 250 R 50 50 1 1 P I
+X P7 7 -350 -300 250 R 50 50 1 1 P I
+ENDDRAW
+ENDDEF
+#
+# soldering_station-rescue_CP_Small-soldering_station-rescue
+#
+DEF soldering_station-rescue_CP_Small-soldering_station-rescue C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "soldering_station-rescue_CP_Small" 10 -80 50 H V L CNN
+F1 "soldering_station-rescue_CP_Small-soldering_station-rescue" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -245,34 +245,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_D
+# soldering_station-rescue_D_Bridge_+-AA-soldering_station-rescue
 #
-DEF soldering_station-rescue_D D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "soldering_station-rescue_D" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *SingleDiode
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 8 -50 50 -50 -50 N
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# soldering_station-rescue_D_Bridge_+-AA
-#
-DEF soldering_station-rescue_D_Bridge_+-AA D 0 50 Y Y 1 F N
+DEF soldering_station-rescue_D_Bridge_+-AA-soldering_station-rescue D 0 50 Y Y 1 F N
 F0 "D" 50 275 50 H V L CNN
-F1 "soldering_station-rescue_D_Bridge_+-AA" 50 200 50 H V L CNN
+F1 "soldering_station-rescue_D_Bridge_+-AA-soldering_station-rescue" 50 200 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -296,11 +273,11 @@ X ~ 4 0 -300 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_LED
+# soldering_station-rescue_LED-soldering_station-rescue
 #
-DEF soldering_station-rescue_LED D 0 40 Y N 1 F N
+DEF soldering_station-rescue_LED-soldering_station-rescue D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "soldering_station-rescue_LED" 0 -100 50 H V C CNN
+F1 "soldering_station-rescue_LED-soldering_station-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -317,11 +294,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_LM7805CT
+# soldering_station-rescue_LM7805CT-soldering_station-rescue
 #
-DEF soldering_station-rescue_LM7805CT U 0 40 Y Y 1 F N
+DEF soldering_station-rescue_LM7805CT-soldering_station-rescue U 0 40 Y Y 1 F N
 F0 "U" -200 200 50 H V C CNN
-F1 "soldering_station-rescue_LM7805CT" 0 200 50 H V L CNN
+F1 "soldering_station-rescue_LM7805CT-soldering_station-rescue" 0 200 50 H V L CNN
 F2 "TO_SOT_Packages_THT:TO-220_Vertical" 0 100 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -335,11 +312,11 @@ X OUT 3 400 50 150 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_MOC3023M
+# soldering_station-rescue_MOC3023M-soldering_station-rescue
 #
-DEF soldering_station-rescue_MOC3023M U 0 40 Y Y 1 F N
+DEF soldering_station-rescue_MOC3023M-soldering_station-rescue U 0 40 Y Y 1 F N
 F0 "U" -210 190 50 H V L CNN
-F1 "soldering_station-rescue_MOC3023M" 0 200 50 H V L CNN
+F1 "soldering_station-rescue_MOC3023M-soldering_station-rescue" 0 200 50 H V L CNN
 F2 "Housings_DIP:DIP-6_W7.62mm" -200 -200 50 H I L CIN
 F3 "" -25 0 50 H I L CNN
 $FPLIST
@@ -379,6 +356,9 @@ F0 "RV" -175 0 50 V V C CNN
 F1 "soldering_station-rescue_POT" -100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
 DRAW
 S 40 100 -40 -100 0 1 10 N
 P 2 0 1 0 100 0 60 0 N
@@ -389,11 +369,11 @@ X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_Q_NPN_BCE
+# soldering_station-rescue_Q_NPN_BCE-soldering_station-rescue
 #
-DEF soldering_station-rescue_Q_NPN_BCE Q 0 0 Y N 1 F N
+DEF soldering_station-rescue_Q_NPN_BCE-soldering_station-rescue Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "soldering_station-rescue_Q_NPN_BCE" 200 -50 50 H V L CNN
+F1 "soldering_station-rescue_Q_NPN_BCE-soldering_station-rescue" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -408,11 +388,11 @@ X E 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_Q_PNP_CBE
+# soldering_station-rescue_Q_PNP_CBE-soldering_station-rescue
 #
-DEF soldering_station-rescue_Q_PNP_CBE Q 0 0 Y N 1 F N
+DEF soldering_station-rescue_Q_PNP_CBE-soldering_station-rescue Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "soldering_station-rescue_Q_PNP_CBE" 200 -50 50 H V L CNN
+F1 "soldering_station-rescue_Q_PNP_CBE-soldering_station-rescue" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -445,11 +425,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# soldering_station-rescue_Rotary_Encoder_Switch
+# soldering_station-rescue_Rotary_Encoder_Switch-soldering_station-rescue
 #
-DEF soldering_station-rescue_Rotary_Encoder_Switch SW 0 40 Y Y 1 F N
+DEF soldering_station-rescue_Rotary_Encoder_Switch-soldering_station-rescue SW 0 40 Y Y 1 F N
 F0 "SW" 0 260 50 H V C CNN
-F1 "soldering_station-rescue_Rotary_Encoder_Switch" 0 -260 50 H V C CNN
+F1 "soldering_station-rescue_Rotary_Encoder_Switch-soldering_station-rescue" 0 -260 50 H V C CNN
 F2 "" -100 160 50 H I C CNN
 F3 "" 0 260 50 H I C CNN
 DRAW
@@ -472,6 +452,20 @@ X C 2 -300 0 100 R 50 50 1 1 I
 X B 3 -300 -100 100 R 50 50 1 1 I
 X ~ 4 300 100 100 L 50 50 1 1 I
 X ~ 5 300 -100 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# soldering_station-rescue_Switch-switch
+#
+DEF soldering_station-rescue_Switch-switch SB 0 40 Y Y 1 F N
+F0 "SB" -200 200 60 H V C CNN
+F1 "soldering_station-rescue_Switch-switch" 100 200 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+P 2 0 1 0 100 0 -80 70 N
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -502,25 +496,11 @@ X ~ 7 300 0 100 L 50 50 2 1 O
 ENDDRAW
 ENDDEF
 #
-# switch_Switch
+# soldering_station-rescue_АЛС324Б1-алс324б1
 #
-DEF switch_Switch SB 0 40 Y Y 1 F N
-F0 "SB" -200 200 60 H V C CNN
-F1 "switch_Switch" 100 200 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-DRAW
-P 2 0 1 0 100 0 -80 70 N
-X ~ 1 -200 0 100 R 50 50 1 1 P
-X ~ 2 200 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# алс324б1_АЛС324Б1
-#
-DEF алс324б1_АЛС324Б1 HG 0 20 Y Y 1 F N
+DEF soldering_station-rescue_АЛС324Б1-алс324б1 HG 0 20 Y Y 1 F N
 F0 "HG" -145 505 50 H V C CNN
-F1 "алс324б1_АЛС324Б1" -35 435 50 H V C CNN
+F1 "soldering_station-rescue_АЛС324Б1-алс324б1" -35 435 50 H V C CNN
 F2 "" -1 40 50 H V C CNN
 F3 "" -1 40 50 H V C CNN
 DRAW
@@ -549,11 +529,11 @@ X ~ 9 300 -350 146 L 39 39 1 1 I
 ENDDRAW
 ENDDEF
 #
-# иб_ИБ
+# soldering_station-rescue_ИБ-иб
 #
-DEF иб_ИБ HG 0 20 Y Y 1 F N
+DEF soldering_station-rescue_ИБ-иб HG 0 20 Y Y 1 F N
 F0 "HG" -195 455 50 H V C CNN
-F1 "иб_ИБ" 100 450 50 H V C CNN
+F1 "soldering_station-rescue_ИБ-иб" 100 450 50 H V C CNN
 F2 "" -5 35 50 H V C CNN
 F3 "" -5 35 50 H V C CNN
 DRAW
